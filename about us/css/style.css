@@ -1,0 +1,256 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: rgb(75, 75, 75);
+  height: 100vh;
+}
+body #header {
+  display: flex;
+  justify-content: space-around;
+  height: 16vh;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+}
+body #header .bg-dark {
+  background-color: black !important;
+}
+body #header nav {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  body #header nav {
+    display: flex;
+  }
+}
+body #header .img {
+  width: 12vw;
+  max-width: 175px;
+  min-width: 140px;
+}
+body #header #a {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+body #header #a .links {
+  text-decoration: none;
+  color: white;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  font-size: 16px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  body #header #a .links {
+    font-size: 12px;
+  }
+}
+body #header #a .links:hover {
+  color: rgb(77, 0, 128);
+  font-size: 19px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  body #header #a .links:hover {
+    font-size: 15px;
+  }
+}
+body #header #a #active {
+  text-decoration: none;
+  color: white;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  font-size: 16px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  body #header #a #active {
+    font-size: 12px;
+  }
+}
+body #header #a #active:hover {
+  color: rgb(77, 0, 128);
+  font-size: 19px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  body #header #a #active:hover {
+    font-size: 15px;
+  }
+}
+body #header #login {
+  display: flex;
+  width: 9vw;
+  height: 4vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #9002FF;
+  border-radius: 30px;
+  min-height: 48px;
+  min-width: 100px;
+}
+body #header #login #LOG {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(17, 0, 250);
+  font-family: "Reddit Mono", monospace;
+}
+body .big {
+  padding: 3vw 3vh;
+  background-color: rgba(255, 255, 255, 0.89);
+  margin-bottom: 106px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .big #headingdiv {
+  margin: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 47%, rgb(0, 212, 255) 100%);
+}
+body .big #headingdiv #heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 2vh;
+}
+@media only screen and (max-width: 1024px) {
+  body .big #headingdiv #heading {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  body .big #headingdiv #heading {
+    font-size: 13px;
+  }
+}
+body .big #pictures {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
+  background-color: rgb(0, 1, 63);
+  border-radius: 30px;
+}
+@media only screen and (max-width: 1250px) {
+  body .big #pictures {
+    flex-wrap: wrap;
+    height: 108vh;
+  }
+}
+@media only screen and (max-width: 730px) {
+  body .big #pictures {
+    height: 156vh;
+  }
+}
+body .big #pictures .image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .big #pictures .image img {
+  height: 45vh;
+}
+@media only screen and (max-width: 730px) {
+  body .big #pictures .image img {
+    width: 65vw;
+  }
+}
+body .big #pictures .image p {
+  font-size: 20px;
+  color: red;
+  font-family: "Reddit Mono", monospace;
+}
+body .big #pictures .image p span {
+  color: yellow;
+  font-size: 20px;
+}
+body .big #questions-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 21vw;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 9, 86) 27%, rgb(0, 212, 255) 77%);
+  border-radius: 8vw;
+  height: 8vh;
+  transition: 0.5s linear;
+}
+body .big #questions-button:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 219, 255) 24%, rgb(112, 25, 99) 49%, rgb(121, 9, 86) 77%);
+  transition: 0.5s linear;
+  width: 23vw;
+}
+@media only screen and (max-width: 800px) {
+  body .big #questions-button {
+    width: 45vw;
+    height: 5vh;
+  }
+}
+body .big #questions-button a {
+  font-size: 2vw;
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 800px) {
+  body .big #questions-button a {
+    font-size: 4vw;
+  }
+}

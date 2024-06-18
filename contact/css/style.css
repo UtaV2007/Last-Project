@@ -1,0 +1,210 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.89);
+  height: 100vh;
+}
+body #header {
+  display: flex;
+  justify-content: space-around;
+  height: 16vh;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+}
+body #header .bg-dark {
+  background-color: black !important;
+}
+body #header nav {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  body #header nav {
+    display: flex;
+  }
+}
+body #header .img {
+  width: 12vw;
+  max-width: 175px;
+  min-width: 140px;
+}
+body #header #a {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+body #header #a .links {
+  text-decoration: none;
+  color: white;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  font-size: 16px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  body #header #a .links {
+    font-size: 12px;
+  }
+}
+body #header #a .links:hover {
+  color: rgb(77, 0, 128);
+  font-size: 19px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  body #header #a .links:hover {
+    font-size: 15px;
+  }
+}
+body #header #a #active {
+  text-decoration: none;
+  color: white;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  font-size: 16px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  body #header #a #active {
+    font-size: 12px;
+  }
+}
+body #header #a #active:hover {
+  color: rgb(77, 0, 128);
+  font-size: 19px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  body #header #a #active:hover {
+    font-size: 15px;
+  }
+}
+body #header #login {
+  display: flex;
+  width: 9vw;
+  height: 4vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #9002FF;
+  border-radius: 30px;
+  min-height: 48px;
+  min-width: 100px;
+}
+body #header #login #LOG {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(17, 0, 250);
+  font-family: "Reddit Mono", monospace;
+}
+body .big {
+  padding: 3vw 3vh;
+  background-color: rgba(255, 255, 255, 0.89);
+  margin-bottom: 106px;
+}
+body .big #heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4E6FAE;
+  margin: 0 0 2vh;
+}
+@media only screen and (max-width: 1024px) {
+  body .big #heading {
+    font-size: 16px;
+  }
+}
+body .big #small {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  body .big #small {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body .big #small iframe {
+    width: 100%;
+  }
+}
+body .big #small .info {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+@media only screen and (max-width: 1024px) {
+  body .big #small .info {
+    width: 100vw;
+    align-items: center;
+  }
+}
+body .big #small .info #contactpictures {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+body .big #small .info #contactpictures a {
+  font-size: 50px;
+  color: black;
+}
+body .big #small .info #contactpictures a img {
+  width: 56px;
+}
+body .big #small .info .text {
+  color: #7E8898;
+  font: Helvetica Neue LT GEO;
+  font-weight: 400;
+  font-size: 17px;
+  margin: 2vh 0;
+}

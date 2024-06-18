@@ -1,0 +1,576 @@
+@import "reset";
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    height: 16vh;
+    width: 100%;
+    align-items: center;
+    background-color: black;
+
+    .bg-dark {
+        background-color: black !important;
+    }
+
+    nav {
+        display: none;
+
+        @media only screen and (max-width: 800px) {
+            display: flex;
+        }
+    }
+    
+    .img {
+        width: 12vw;
+        max-width: 175px;
+        min-width: 140px;
+      }
+  
+    #a {  
+      display: flex;
+      justify-content: space-around;
+      width: 60vw;
+      
+      .links {
+      text-decoration: none;
+      color: white;
+      font-family: "DejaVu Sans Bold Oblique", sans-serif;
+      font-size: 16px;
+      transition-duration: 500ms;
+      transition-timing-function: linear;
+      @media only screen and (max-width: 1024px) {
+        font-size: 12px;
+      }
+      }
+  
+      .links:hover {
+        color: rgb(77, 0, 128);
+        font-size: 19px;
+        transition-duration: 500ms;
+        transition-timing-function: linear;
+        
+        @media only screen and (max-width: 1024px) {
+          font-size: 15px;
+        }
+      }
+  
+      #active {
+        text-decoration: none;
+        color: white;
+        font-family: "DejaVu Sans Bold Oblique", sans-serif;
+        font-size: 16px;
+        transition-duration: 500ms;
+        transition-timing-function: linear;
+  
+        @media only screen and (max-width: 1024px) {
+          font-size: 12px;
+        }
+      }
+  
+      #active:hover {
+        color: rgb(77, 0, 128);
+        font-size: 19px;
+        transition-duration: 500ms;
+        transition-timing-function: linear;
+  
+        @media only screen and (max-width: 1024px) {
+          font-size: 15px;
+        }
+      }
+  
+    }
+  
+    #login {
+      display: flex;
+      width: 9vw;
+      height: 4vw;
+      justify-content: center;
+      align-items: center;
+      background-color: #9002FF;
+      border-radius: 30px;
+      min-height: 48px;
+      min-width: 100px;
+      #LOG {
+        text-decoration: none;
+        font-size: 16px;
+        color: rgb(17, 0, 250);
+        font-family: "Reddit Mono", monospace;
+        }
+    }  
+  }
+
+  #newstext {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: "DejaVu Sans Bold Oblique", sans-serif;
+    text-decoration: none;
+    margin: 10px 20px;
+    display: inline-block;
+  }
+
+  #pics {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    #theboys {
+        display: flex;
+        height: 40vh;
+        border-radius: 20px;
+        background-image: url(/main/images/download\ \(1\).jpg);
+        
+        background-color: #cccccc;
+        background-position: center; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+        margin: 0 20px;
+        align-items: flex-end;
+        justify-content: center;
+
+        #theboystext {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 10vh;
+          width: 255px;
+          background-color: black;
+          border-radius: 20px;
+          opacity: 0.75;
+          transition: 500ms ease-in-out;
+
+            &:hover {
+              width: 290px;
+              opacity: 0.9;
+            }
+
+          a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+          }
+        }
+      }
+        #godzillaxkong {
+          display: flex;
+          height: 40vh;
+          border-radius: 20px;
+          background-image: url(/main/images/Godzilla_x_kong_the_new_empire_poster.jpg);
+          background-color: #cccccc;
+          background-position: center; 
+          background-repeat: no-repeat; 
+          background-size: cover;
+          margin: 0 20px;
+          align-items: flex-end;
+          justify-content: center;
+
+
+          #godzillaxkongtext {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            width: 255px;
+            background-color: black;
+            border-radius: 20px;
+            opacity: 0.75;
+            transition: 500ms ease-in-out;
+
+            &:hover {
+              width: 290px;
+              opacity: 0.9;
+            }
+
+            a {
+              font-size: 22px;
+              color: white;
+              font-family: normal;
+              text-decoration: none;
+            }
+          }
+        }
+
+        #fallguy {
+          display: flex;
+          height: 40vh;
+          border-radius: 20px;
+          background-image: url(/main/images/MV5BMjA5ZjA3ZjMtMzg2ZC00ZDc4LTk3MTctYTE1ZTUzZDIzMjQyXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_FMjpg_UX1000_.jpg);
+          background-color: #cccccc;
+          background-position: center; 
+          background-repeat: no-repeat; 
+          background-size: cover;
+          margin: 0 20px;
+          align-items: flex-end;
+          justify-content: center;
+
+          #fallguytext {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 10vh;
+              width: 255px;
+              background-color: black;
+              border-radius: 20px;
+              opacity: 0.75;
+              transition: 500ms ease-in-out;
+
+              &:hover {
+                width: 290px;
+                opacity: 0.9;
+              }
+
+              a {
+                font-size: 22px;
+                color: white;
+                font-family: normal;
+                text-decoration: none;
+               }
+          }
+        }
+
+        #boykillsworld {
+          display: flex;
+          height: 40vh;
+          border-radius: 20px;
+          background-image: url(/main/images/MV5BNmYyM2VhM2UtYmEzNi00M2RmLTkzYWQtZGQ5MjI2MzQzMWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg);
+          background-color: #cccccc;
+          background-position: center; 
+          background-repeat: no-repeat; 
+          background-size: cover;
+          margin: 0 20px;
+          align-items: flex-end;
+          justify-content: center;
+          
+          #boykillsworldtext {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 10vh;
+              width: 255px;
+              background-color: black;
+              border-radius: 20px;
+              opacity: 0.75;
+              transition: 500ms ease-in-out;
+
+              &:hover {
+                width: 290px;
+                opacity: 0.9;
+              }
+
+              a {
+                font-size: 22px;
+                color: white;
+                font-family: normal;
+                text-decoration: none;
+              }
+          }
+        }
+
+        #tarot {
+          display: flex;
+          height: 40vh;
+          border-radius: 20px;
+          background-image: url(/main/images/MV5BOWVmODRmYWEtOTdiMS00N2FjLWE4NTQtNTYyMzAwYjJhNDA2XkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg);
+          background-color: #cccccc;
+          background-position: center; 
+          background-repeat: no-repeat; 
+          background-size: cover;
+          margin: 0 20px;
+          align-items: flex-end;
+          justify-content: center;
+          #tarottext {
+            display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 10vh;
+              width: 255px;
+              background-color: black;
+              border-radius: 20px;
+              opacity: 0.75;
+              transition: 500ms ease-in-out;
+
+              &:hover {
+                width: 290px;
+                opacity: 0.9;
+              }
+
+              a {
+                font-size: 22px;
+                color: white;
+                font-family: normal;
+                text-decoration: none;
+              }
+          }
+        }
+
+        #civilwar {
+          display: flex;
+          height: 40vh;
+          border-radius: 20px;
+          background-image: url(/main/images/MV5BYTYyODhlODktYjUzNC00NjUyLWI1MzYtNmI0MTY3YTUxYjY2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg);
+          background-color: #cccccc;
+          background-position: center; 
+          background-repeat: no-repeat; 
+          background-size: cover;
+          margin: 0 20px;
+          align-items: flex-end;
+          justify-content: center;
+          
+          #civilwartext {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            width: 255px;
+            background-color: black;
+            border-radius: 20px;
+            opacity: 0.75;
+            transition: 500ms ease-in-out;
+
+            &:hover {
+              width: 290px;
+              opacity: 0.9;
+            }
+
+            a {
+              font-size: 22px;
+              color: white;
+              font-family: normal;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      #big {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        #thebeast {
+            display: flex;
+            height: 40vh;
+            border-radius: 20px;
+            background-image: url(/main/images/thebeast.jpg);
+            
+            background-color: #cccccc;
+            background-position: center; 
+            background-repeat: no-repeat; 
+            background-size: cover;
+            margin: 0 20px;
+            align-items: flex-end;
+            justify-content: center;
+    
+            #thebeasttext {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 10vh;
+              width: 255px;
+              background-color: black;
+              border-radius: 20px;
+              opacity: 0.75;
+              transition: 500ms ease-in-out;
+    
+                &:hover {
+                  width: 290px;
+                  opacity: 0.9;
+                }
+    
+              a {
+              font-size: 22px;
+              color: white;
+              font-family: normal;
+              text-decoration: none;
+              }
+            }
+          }
+            #insideout {
+              display: flex;
+              height: 40vh;
+              border-radius: 20px;
+              background-image: url(/main/images/insideout.jpg);
+              background-color: #cccccc;
+              background-position: center; 
+              background-repeat: no-repeat; 
+              background-size: cover;
+              margin: 0 20px;
+              align-items: flex-end;
+              justify-content: center;
+    
+    
+              #insideouttext {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10vh;
+                width: 255px;
+                background-color: black;
+                border-radius: 20px;
+                opacity: 0.75;
+                transition: 500ms ease-in-out;
+    
+                &:hover {
+                  width: 290px;
+                  opacity: 0.9;
+                }
+    
+                a {
+                  font-size: 22px;
+                  color: white;
+                  font-family: normal;
+                  text-decoration: none;
+                }
+              }
+            }
+    
+            #houseofthedragon {
+              display: flex;
+              height: 40vh;
+              border-radius: 20px;
+              background-image: url(/main/images/houseofthedragon.jpg);
+              background-color: #cccccc;
+              background-position: center; 
+              background-repeat: no-repeat; 
+              background-size: cover;
+              margin: 0 20px;
+              align-items: flex-end;
+              justify-content: center;
+    
+              #houseofthedragontext {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 10vh;
+                  width: 255px;
+                  background-color: black;
+                  border-radius: 20px;
+                  opacity: 0.75;
+                  transition: 500ms ease-in-out;
+    
+                  &:hover {
+                    width: 290px;
+                    opacity: 0.9;
+                  }
+    
+                  a {
+                    font-size: 22px;
+                    color: white;
+                    font-family: normal;
+                    text-decoration: none;
+                   }
+              }
+            }
+    
+            #ultraman {
+              display: flex;
+              height: 40vh;
+              border-radius: 20px;
+              background-image: url(/main/images/ultraman.jpg);
+              background-color: #cccccc;
+              background-position: center; 
+              background-repeat: no-repeat; 
+              background-size: cover;
+              margin: 0 20px;
+              align-items: flex-end;
+              justify-content: center;
+              
+              #ultramantext {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 10vh;
+                  width: 255px;
+                  background-color: black;
+                  border-radius: 20px;
+                  opacity: 0.75;
+                  transition: 500ms ease-in-out;
+    
+                  &:hover {
+                    width: 290px;
+                    opacity: 0.9;
+                  }
+    
+                  a {
+                    font-size: 22px;
+                    color: white;
+                    font-family: normal;
+                    text-decoration: none;
+                  }
+              }
+            }
+    
+            #cabrini {
+              display: flex;
+              height: 40vh;
+              border-radius: 20px;
+              background-image: url(/main/images/cabrini.jpg);
+              background-color: #cccccc;
+              background-position: center; 
+              background-repeat: no-repeat; 
+              background-size: cover;
+              margin: 0 20px;
+              align-items: flex-end;
+              justify-content: center;
+              #cabrinitext {
+                display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 10vh;
+                  width: 255px;
+                  background-color: black;
+                  border-radius: 20px;
+                  opacity: 0.75;
+                  transition: 500ms ease-in-out;
+    
+                  &:hover {
+                    width: 290px;
+                    opacity: 0.9;
+                  }
+    
+                  a {
+                    font-size: 22px;
+                    color: white;
+                    font-family: normal;
+                    text-decoration: none;
+                  }
+              }
+            }
+    
+            #julia {
+              display: flex;
+              height: 40vh;
+              border-radius: 20px;
+              background-image: url(/main/images/julia.jpg);
+              background-color: #cccccc;
+              background-position: center; 
+              background-repeat: no-repeat; 
+              background-size: cover;
+              margin: 0 20px;
+              align-items: flex-end;
+              justify-content: center;
+              
+              #juliatext {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 10vh;
+                width: 255px;
+                background-color: black;
+                border-radius: 20px;
+                opacity: 0.75;
+                transition: 500ms ease-in-out;
+    
+                &:hover {
+                  width: 290px;
+                  opacity: 0.9;
+                }
+    
+                a {
+                  font-size: 22px;
+                  color: white;
+                  font-family: normal;
+                  text-decoration: none;
+                }
+              }
+            }
+          }

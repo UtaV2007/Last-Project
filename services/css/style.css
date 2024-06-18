@@ -1,0 +1,566 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  height: 16vh;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+}
+#header .bg-dark {
+  background-color: black !important;
+}
+#header nav {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  #header nav {
+    display: flex;
+  }
+}
+#header .img {
+  width: 12vw;
+  max-width: 175px;
+  min-width: 140px;
+}
+#header #a {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+#header #a .links {
+  text-decoration: none;
+  color: white;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  font-size: 16px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  #header #a .links {
+    font-size: 12px;
+  }
+}
+#header #a .links:hover {
+  color: rgb(77, 0, 128);
+  font-size: 19px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  #header #a .links:hover {
+    font-size: 15px;
+  }
+}
+#header #a #active {
+  text-decoration: none;
+  color: white;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  font-size: 16px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  #header #a #active {
+    font-size: 12px;
+  }
+}
+#header #a #active:hover {
+  color: rgb(77, 0, 128);
+  font-size: 19px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  #header #a #active:hover {
+    font-size: 15px;
+  }
+}
+#header #login {
+  display: flex;
+  width: 9vw;
+  height: 4vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #9002FF;
+  border-radius: 30px;
+  min-height: 48px;
+  min-width: 100px;
+}
+#header #login #LOG {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(17, 0, 250);
+  font-family: "Reddit Mono", monospace;
+}
+
+#services {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 42vh;
+}
+#services #inception {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/inception.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#services #inception #inceptiontext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#services #inception #inceptiontext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#services #inception #inceptiontext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#services #memento {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/memento.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#services #memento #mementotext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#services #memento #mementotext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#services #memento #mementotext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#services #shutterisland {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/sutterisland.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#services #shutterisland #shutterislandtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#services #shutterisland #shutterislandtext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#services #shutterisland #shutterislandtext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#services #angrymen {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/angrymen.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#services #angrymen #angrymentext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#services #angrymen #angrymentext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#services #angrymen #angrymentext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#services #shawshankredemption {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/shawshankredemption.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#services #shawshankredemption #shawshankredemptiontext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#services #shawshankredemption #shawshankredemptiontext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#services #shawshankredemption #shawshankredemptiontext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#services #seven {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/seven.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#services #seven #seventext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#services #seven #seventext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#services #seven #seventext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+
+#service {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 42vh;
+}
+#service #interstellar {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/interstellar.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#service #interstellar #interstellartext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#service #interstellar #interstellartext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#service #interstellar #interstellartext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#service #whiplash {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/whiplash.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#service #whiplash #whiplashtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#service #whiplash #whiplashtext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#service #whiplash #whiplashtext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#service #fightclub {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/download\ \(2\).jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#service #fightclub #fightclubtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#service #fightclub #fightclubtext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#service #fightclub #fightclubtext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#service #greenmile {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/greenmile.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#service #greenmile #greenmiletext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#service #greenmile #greenmiletext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#service #greenmile #greenmiletext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#service #dune {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/dune.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#service #dune #dunetext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#service #dune #dunetext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#service #dune #dunetext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#service #prestige {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/prestige.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#service #prestige #prestigetext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#service #prestige #prestigetext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#service #prestige #prestigetext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}

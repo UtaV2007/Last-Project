@@ -1,0 +1,767 @@
+@import "reset";
+
+#header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 16vh;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: black;
+
+    .bg-dark {
+        background-color: black !important;
+    }
+
+    nav {
+        display: none;
+
+        @media only screen and (max-width: 800px) {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+    }
+    
+    .img {
+        width: 12vw;
+        max-width: 175px;
+        min-width: 140px;
+      }
+  
+    #a {  
+      display: -webkit-box;  
+      display: -ms-flexbox;  
+      display: flex;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      width: 60vw;
+      
+      .links {
+      text-decoration: none;
+      color: white;
+      font-family: "DejaVu Sans Bold Oblique", sans-serif;
+      font-size: 16px;
+      -webkit-transition-duration: 500ms;
+           -o-transition-duration: 500ms;
+              transition-duration: 500ms;
+      -webkit-transition-timing-function: linear;
+           -o-transition-timing-function: linear;
+              transition-timing-function: linear;
+      @media only screen and (max-width: 1024px) {
+        font-size: 12px;
+      }
+      }
+  
+      .links:hover {
+        color: rgb(77, 0, 128);
+        font-size: 19px;
+        -webkit-transition-duration: 500ms;
+             -o-transition-duration: 500ms;
+                transition-duration: 500ms;
+        -webkit-transition-timing-function: linear;
+             -o-transition-timing-function: linear;
+                transition-timing-function: linear;
+        
+        @media only screen and (max-width: 1024px) {
+          font-size: 15px;
+        }
+      }
+  
+      #active {
+        text-decoration: none;
+        color: white;
+        font-family: "DejaVu Sans Bold Oblique", sans-serif;
+        font-size: 16px;
+        -webkit-transition-duration: 500ms;
+             -o-transition-duration: 500ms;
+                transition-duration: 500ms;
+        -webkit-transition-timing-function: linear;
+             -o-transition-timing-function: linear;
+                transition-timing-function: linear;
+  
+        @media only screen and (max-width: 1024px) {
+          font-size: 12px;
+        }
+      }
+  
+      #active:hover {
+        color: rgb(77, 0, 128);
+        font-size: 19px;
+        -webkit-transition-duration: 500ms;
+             -o-transition-duration: 500ms;
+                transition-duration: 500ms;
+        -webkit-transition-timing-function: linear;
+             -o-transition-timing-function: linear;
+                transition-timing-function: linear;
+  
+        @media only screen and (max-width: 1024px) {
+          font-size: 15px;
+        }
+      }
+  
+    }
+  
+    #login {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 9vw;
+      height: 4vw;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: #9002FF;
+      border-radius: 30px;
+      min-height: 48px;
+      min-width: 100px;
+      #LOG {
+        text-decoration: none;
+        font-size: 16px;
+        color: rgb(17, 0, 250);
+        font-family: "Reddit Mono", monospace;
+        }
+     }  
+  }
+
+  #services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 42vh;
+    
+    
+    #inception {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/inception.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    
+      #inceptiontext {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+      
+    }
+  }
+  #memento {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/memento.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #mementotext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+  #shutterisland {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/sutterisland.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #shutterislandtext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+  
+  #angrymen {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/angrymen.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #angrymentext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+  #shawshankredemption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/shawshankredemption.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #shawshankredemptiontext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+  #seven {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/seven.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #seventext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+  }
+  
+
+     
+     #service { 
+      display: -webkit-box; 
+      display: -ms-flexbox; 
+      display: flex;
+      width: 100%;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      height: 42vh;
+
+
+       #interstellar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/interstellar.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      
+      #interstellartext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+
+  #whiplash {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/whiplash.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #whiplashtext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+
+  #fightclub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/download\ \(2\).jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #fightclubtext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+
+  #greenmile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/greenmile.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #greenmiletext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+
+  #dune {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/dune.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #dunetext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+
+  #prestige {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+      height: 40vh;
+      border-radius: 20px;
+      background-image: url(/main/images/prestige.jpg);
+      background-color: #cccccc;
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      margin: 0 20px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    #prestigetext {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        height: 10vh;
+        width: 255px;
+        background-color: black;
+        border-radius: 20px;
+        opacity: 0.75;
+        -webkit-transition: 500ms ease-in-out;
+        -o-transition: 500ms ease-in-out;
+        transition: 500ms ease-in-out;
+
+        &:hover {
+          width: 290px;
+          opacity: 0.9;
+        }
+
+        a {
+          font-size: 22px;
+          color: white;
+          font-family: normal;
+          text-decoration: none;
+        }
+    }
+  }
+  }  

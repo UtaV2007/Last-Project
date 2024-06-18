@@ -1,0 +1,725 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#entire {
+  background-color: rgb(75, 75, 75);
+  overflow-x: hidden;
+}
+#entire #header {
+  display: flex;
+  justify-content: space-around;
+  height: 16vh;
+  width: 100%;
+  align-items: center;
+  background-color: black;
+}
+#entire #header .bg-dark {
+  background-color: black !important;
+}
+#entire #header nav {
+  display: none;
+}
+@media only screen and (max-width: 800px) {
+  #entire #header nav {
+    display: flex;
+  }
+}
+#entire #header .img {
+  width: 12vw;
+  max-width: 175px;
+  min-width: 140px;
+}
+#entire #header #a {
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+}
+#entire #header #a .links {
+  text-decoration: none;
+  color: white;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  font-size: 16px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  #entire #header #a .links {
+    font-size: 12px;
+  }
+}
+#entire #header #a .links:hover {
+  color: rgb(77, 0, 128);
+  font-size: 19px;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+}
+@media only screen and (max-width: 1024px) {
+  #entire #header #a .links:hover {
+    font-size: 15px;
+  }
+}
+#entire #header #login {
+  display: flex;
+  width: 9vw;
+  height: 4vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #9002FF;
+  border-radius: 30px;
+  min-height: 48px;
+  min-width: 100px;
+}
+#entire #header #login #LOG {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(17, 0, 250);
+  font-family: "Reddit Mono", monospace;
+}
+#entire #questions {
+  display: flex;
+  justify-content: right;
+  padding: 2vw;
+  align-items: flex-end;
+  background-image: url(/main/images/greatest-movies-of-all-time.avif);
+  background-color: #cccccc;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+}
+#entire #questions img {
+  width: 90%;
+}
+@media only screen and (max-width: 800px) {
+  #entire #questions img {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+}
+#entire #questions #questions-button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 9, 86) 27%, rgb(0, 212, 255) 77%);
+  border-radius: 8vw;
+  height: 8vh;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#entire #questions #questions-button:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(0, 219, 255) 24%, rgb(112, 25, 99) 49%, rgb(121, 9, 86) 77%);
+  width: 26vw;
+  transition: 0.5s ease;
+}
+@media only screen and (max-width: 800px) {
+  #entire #questions #questions-button {
+    width: 50vw;
+    height: 5vh;
+  }
+  #entire #questions #questions-button:hover {
+    width: 51vw;
+  }
+}
+#entire #questions #questions-button a {
+  font-size: 2vw;
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (max-width: 800px) {
+  #entire #questions #questions-button a {
+    font-size: 4vw;
+  }
+}
+#entire #newstext {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  text-decoration: none;
+  margin: 10px 20px;
+  display: inline-block;
+}
+#entire #pics {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#entire #pics #theboys {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/download\ \(1\).jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #pics #theboys #theboystext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #pics #theboys #theboystext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #pics #theboys #theboystext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #pics #godzillaxkong {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/Godzilla_x_kong_the_new_empire_poster.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #pics #godzillaxkong #godzillaxkongtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #pics #godzillaxkong #godzillaxkongtext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #pics #godzillaxkong #godzillaxkongtext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #pics #fallguy {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/MV5BMjA5ZjA3ZjMtMzg2ZC00ZDc4LTk3MTctYTE1ZTUzZDIzMjQyXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_FMjpg_UX1000_.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #pics #fallguy #fallguytext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #pics #fallguy #fallguytext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #pics #fallguy #fallguytext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #pics #boykillsworld {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/MV5BNmYyM2VhM2UtYmEzNi00M2RmLTkzYWQtZGQ5MjI2MzQzMWMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #pics #boykillsworld #boykillsworldtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #pics #boykillsworld #boykillsworldtext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #pics #boykillsworld #boykillsworldtext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #pics #tarot {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/MV5BOWVmODRmYWEtOTdiMS00N2FjLWE4NTQtNTYyMzAwYjJhNDA2XkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #pics #tarot #tarottext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #pics #tarot #tarottext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #pics #tarot #tarottext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #pics #civilwar {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/MV5BYTYyODhlODktYjUzNC00NjUyLWI1MzYtNmI0MTY3YTUxYjY2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #pics #civilwar #civilwartext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #pics #civilwar #civilwartext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #pics #civilwar #civilwartext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #servicestext {
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+  font-family: "DejaVu Sans Bold Oblique", sans-serif;
+  text-decoration: none;
+  margin: 10px 20px;
+  display: inline-block;
+}
+#entire #services {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+#entire #services #inception {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/inception.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #services #inception #inceptiontext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #services #inception #inceptiontext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #services #inception #inceptiontext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #services #memento {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/memento.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #services #memento #mementotext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #services #memento #mementotext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #services #memento #mementotext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #services #shutterisland {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/sutterisland.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #services #shutterisland #shutterislandtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #services #shutterisland #shutterislandtext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #services #shutterisland #shutterislandtext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #services #angrymen {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/angrymen.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #services #angrymen #angrymentext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #services #angrymen #angrymentext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #services #angrymen #angrymentext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #services #shawshankredemption {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/shawshankredemption.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #services #shawshankredemption #shawshankredemptiontext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #services #shawshankredemption #shawshankredemptiontext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #services #shawshankredemption #shawshankredemptiontext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #services #seven {
+  display: flex;
+  height: 40vh;
+  border-radius: 20px;
+  background-image: url(/main/images/seven.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+#entire #services #seven #seventext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 255px;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.75;
+  transition: 500ms ease-in-out;
+}
+#entire #services #seven #seventext:hover {
+  width: 290px;
+  opacity: 0.9;
+}
+#entire #services #seven #seventext a {
+  font-size: 22px;
+  color: white;
+  font-family: normal;
+  text-decoration: none;
+}
+#entire #footer {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vw;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+#entire #footer #aboutusbutton {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  background-color: gray;
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+#entire #footer #aboutusbutton:hover {
+  background-color: rgb(0, 58, 250);
+  width: 205px;
+}
+#entire #footer #aboutusbutton a {
+  font-size: 19px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+#entire #footer #triple {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  justify-content: space-around;
+}
+#entire #footer #triple .head {
+  font-size: 19px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+#entire #footer #aboutusdiv {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 210px;
+}
+#entire #footer #aboutusdiv #aboutusbutton {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: gray;
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+#entire #footer #aboutusdiv #aboutusbutton:hover {
+  background-color: rgb(0, 58, 250);
+  width: 205px;
+}
+#entire #footer #aboutusdiv #aboutusbutton a {
+  font-size: 19px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+#entire #footer #aboutusdiv #aboutustext p {
+  font-size: 16px;
+  color: white;
+}
+#entire #footer #aboutusdiv #aboutustext p span {
+  color: #02afff;
+}
+#entire #contactbutton {
+  height: 17vh;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#entire #contactbutton a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+#entire #contactbutton #contactpictures {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+#entire #contactbutton #contactpictures a {
+  font-size: 50px;
+}
+#entire #contactbutton #contactpictures a img {
+  width: 56px;
+}

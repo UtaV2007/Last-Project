@@ -1,0 +1,289 @@
+@import "reset";
+
+body {
+    background-color: rgb(75, 75, 75);
+    height: 100vh;
+    #header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        height: 16vh;
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: black;
+
+        .bg-dark {
+          background-color: black !important;
+      }
+
+      nav {
+          display: none;
+
+          @media only screen and (max-width: 800px) {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+          }
+      }
+        
+        .img {
+            width: 12vw;
+            max-width: 175px;
+            min-width: 140px;
+          }
+      
+        #a {  
+          display: -webkit-box;  
+          display: -ms-flexbox;  
+          display: flex;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          width: 60vw;
+          
+          .links {
+          text-decoration: none;
+          color: white;
+          font-family: "DejaVu Sans Bold Oblique", sans-serif;
+          font-size: 16px;
+          -webkit-transition-duration: 500ms;
+               -o-transition-duration: 500ms;
+                  transition-duration: 500ms;
+          -webkit-transition-timing-function: linear;
+               -o-transition-timing-function: linear;
+                  transition-timing-function: linear;
+          @media only screen and (max-width: 1024px) {
+            font-size: 12px;
+          }
+          }
+      
+          .links:hover {
+            color: rgb(77, 0, 128);
+            font-size: 19px;
+            -webkit-transition-duration: 500ms;
+                 -o-transition-duration: 500ms;
+                    transition-duration: 500ms;
+            -webkit-transition-timing-function: linear;
+                 -o-transition-timing-function: linear;
+                    transition-timing-function: linear;
+            
+            @media only screen and (max-width: 1024px) {
+              font-size: 15px;
+            }
+          }
+      
+          #active {
+            text-decoration: none;
+            color: white;
+            font-family: "DejaVu Sans Bold Oblique", sans-serif;
+            font-size: 16px;
+            -webkit-transition-duration: 500ms;
+                 -o-transition-duration: 500ms;
+                    transition-duration: 500ms;
+            -webkit-transition-timing-function: linear;
+                 -o-transition-timing-function: linear;
+                    transition-timing-function: linear;
+      
+            @media only screen and (max-width: 1024px) {
+              font-size: 12px;
+            }
+          }
+      
+          #active:hover {
+            color: rgb(77, 0, 128);
+            font-size: 19px;
+            -webkit-transition-duration: 500ms;
+                 -o-transition-duration: 500ms;
+                    transition-duration: 500ms;
+            -webkit-transition-timing-function: linear;
+                 -o-transition-timing-function: linear;
+                    transition-timing-function: linear;
+      
+            @media only screen and (max-width: 1024px) {
+              font-size: 15px;
+            }
+          }
+      
+        }
+      
+        #login {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 9vw;
+          height: 4vw;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          background-color: #9002FF;
+          border-radius: 30px;
+          min-height: 48px;
+          min-width: 100px;
+          #LOG {
+            text-decoration: none;
+            font-size: 16px;
+            color: rgb(17, 0, 250);
+            font-family: "Reddit Mono", monospace;
+            }
+        }  
+      }
+      
+      .big {
+        padding: 3vw 3vh ;
+        background-color: rgba(255, 255, 255, 0.89);
+        margin-bottom: 106px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        
+        #headingdiv {
+        margin: 20px;
+        border-radius: 20px;
+        padding: 10px;
+        background: rgb(2,0,36);
+        background: -webkit-gradient(linear, left top, right top, from(rgba(2,0,36,1)), color-stop(47%, rgba(9,9,121,1)), to(rgba(0,212,255,1)));
+        background: -o-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 100%);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 47%, rgba(0,212,255,1) 100%);
+          #heading {
+          font-size: 24px;
+          font-weight: 700;
+          color: white;
+          margin: 0 0 2vh;
+
+          @media only screen and (max-width: 1024px) {
+            font-size: 16px;
+          }
+
+          @media only screen and (max-width: 560px) {
+            font-size: 13px;
+          }
+        }
+        }
+        
+
+        #pictures {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          height: 60vh;
+          background-color: rgb(0, 1, 63);
+          border-radius: 30px;
+
+          @media only screen and (max-width: 1250px) {
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            height: 108vh;
+          }
+          @media only screen and (max-width: 730px) {
+            height: 156vh;
+          }
+          .image {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+
+            img {
+              height: 45vh;
+              
+              @media only screen and (max-width: 730px) {
+                width: 65vw;
+              }
+
+            }
+            p {
+              font-size: 20px;
+              color: red;
+              font-family: "Reddit Mono", monospace;
+              span {
+                color: yellow;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+        
+        #questions-button {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          width: 21vw;
+          background: rgb(2,0,36);
+          background: -webkit-gradient(linear, left top, right top, from(rgba(2,0,36,1)), color-stop(27%, rgba(121,9,86,1)), color-stop(77%, rgba(0,212,255,1)));
+          background: -o-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(121,9,86,1) 27%, rgba(0,212,255,1) 77%);
+          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,86,1) 27%, rgba(0,212,255,1) 77%);  
+          border-radius: 8vw;
+          height: 8vh;
+          -webkit-transition: 0.5s linear;
+          -o-transition: 0.5s linear;
+          transition: 0.5s linear;
+
+          &:hover {
+            background: rgb(2,0,36);
+            background: -webkit-gradient(linear, left top, right top, from(rgba(2,0,36,1)), color-stop(24%, rgba(0,219,255,1)), color-stop(49%, rgba(112,25,99,1)), color-stop(77%, rgba(121,9,86,1)));
+            background: -o-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(0,219,255,1) 24%, rgba(112,25,99,1) 49%, rgba(121,9,86,1) 77%);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,219,255,1) 24%, rgba(112,25,99,1) 49%, rgba(121,9,86,1) 77%);
+            -webkit-transition: 0.5s linear;
+            -o-transition: 0.5s linear;
+            transition: 0.5s linear;
+            width: 23vw;
+          }
+    
+          @media only screen and (max-width: 800px) {
+            width: 45vw;
+            height: 5vh;
+          }
+    
+          a {
+            font-size: 2vw;
+            text-decoration: none;
+            color: black;
+    
+            @media only screen and (max-width: 800px) {
+              font-size: 4vw;
+            }
+          }
+        }
+    }
+      
+}
+ 
