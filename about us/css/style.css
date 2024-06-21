@@ -243,6 +243,9 @@ body .big #questions-button:hover {
     width: 45vw;
     height: 5vh;
   }
+  body .big #questions-button:hover {
+    width: 47vw;
+  }
 }
 body .big #questions-button a {
   font-size: 2vw;
