@@ -574,3 +574,182 @@
               }
             }
           }
+
+          #footer {
+            width: 100%;
+            height: 30vh;
+            background-color: black;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            padding: 4vw;          
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+  
+  
+            #aboutusbutton {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              width: 190px;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              height: 7vh;
+              background-color: gray;
+              border-radius: 30px;
+              -webkit-transition:  0.5s ease-in-out;
+              -o-transition:  0.5s ease-in-out;
+              transition:  0.5s ease-in-out;
+  
+              &:hover {
+                background-color: rgb(0, 58, 250);
+                width: 205px;
+                
+              }
+  
+              a {
+                font-size: 19px;
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+              }
+            }
+  
+            #triple {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              height: 25vh;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around;
+  
+              .head {
+                font-size: 19px;
+                text-decoration: none;
+                color: white;
+                font-weight: 600;
+              }
+            }
+  
+            #aboutusdiv {
+              height: 25vh;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around;
+              width: 210px;
+              
+             #aboutusbutton {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              width: 190px;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              height: 5vh;
+              background-color: gray;
+              border-radius: 30px;
+              -webkit-transition:  0.5s ease-in-out;
+              -o-transition:  0.5s ease-in-out;
+              transition:  0.5s ease-in-out;
+  
+              &:hover {
+                background-color: rgb(0, 58, 250);
+                width: 205px;
+                
+              }
+  
+              a {
+                font-size: 19px;
+                text-decoration: none;
+                color: black;
+                font-weight: 700;
+              }
+            }
+  
+            #aboutustext {
+              p {
+                font-size: 16px;
+                color: white;
+                span {
+                  color: #02afff;
+                }
+              }
+            }
+          }
+            
+          }
+          
+          #contactbutton {
+              height: 17vh;
+              background-color: black;
+              width: 100%;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-pack: distribute;
+                  justify-content: space-around;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+  
+              a {
+                text-decoration: none;
+                color: white;
+                font-size: 30px;
+                font-weight: 700;
+              }
+  
+              #contactpictures {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                        justify-content: space-between;
+                width: 250px;
+  
+                a {
+                  font-size: 50px;
+  
+                  img {
+                    width: 56px;
+                  }
+                  } 
+                }
+              }

@@ -572,3 +572,110 @@ table {
   font-family: normal;
   text-decoration: none;
 }
+
+#footer {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4vw;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+#footer #aboutusbutton {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  background-color: gray;
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+#footer #aboutusbutton:hover {
+  background-color: rgb(0, 58, 250);
+  width: 205px;
+}
+#footer #aboutusbutton a {
+  font-size: 19px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+#footer #triple {
+  display: flex;
+  flex-direction: column;
+  height: 25vh;
+  justify-content: space-around;
+}
+#footer #triple .head {
+  font-size: 19px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+#footer #aboutusdiv {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 210px;
+}
+#footer #aboutusdiv #aboutusbutton {
+  display: flex;
+  flex-direction: column;
+  width: 190px;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: gray;
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+#footer #aboutusdiv #aboutusbutton:hover {
+  background-color: rgb(0, 58, 250);
+  width: 205px;
+}
+#footer #aboutusdiv #aboutusbutton a {
+  font-size: 19px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+#footer #aboutusdiv #aboutustext p {
+  font-size: 16px;
+  color: white;
+}
+#footer #aboutusdiv #aboutustext p span {
+  color: #02afff;
+}
+
+#contactbutton {
+  height: 17vh;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#contactbutton a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+#contactbutton #contactpictures {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+#contactbutton #contactpictures a {
+  font-size: 50px;
+}
+#contactbutton #contactpictures a img {
+  width: 56px;
+}
