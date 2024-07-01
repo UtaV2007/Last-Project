@@ -51,7 +51,7 @@ table {
 #header {
   display: flex;
   justify-content: space-around;
-  height: 16vh;
+  height: 128px;
   width: 100%;
   align-items: center;
   background-color: black;
@@ -70,6 +70,7 @@ table {
 #header .img {
   width: 12vw;
   max-width: 175px;
+  height: 128px;
   min-width: 140px;
 }
 #header #a {

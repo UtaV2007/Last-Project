@@ -48,19 +48,25 @@ table {
   border-spacing: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #header {
   display: flex;
   justify-content: space-around;
-  height: 16vh;
+  height: 128px;
   width: 100%;
   align-items: center;
   background-color: black;
+  overflow-x: hidden;
 }
 #header .bg-dark {
   background-color: black !important;
 }
 #header nav {
   display: none;
+  width: 100vw;
 }
 @media only screen and (max-width: 800px) {
   #header nav {
@@ -69,6 +75,7 @@ table {
 }
 #header .img {
   width: 12vw;
+  height: 128px;
   max-width: 175px;
   min-width: 140px;
 }
@@ -90,6 +97,11 @@ table {
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 800px) {
+  #header #a .links {
+    display: none;
+  }
+}
 #header #a .links:hover {
   color: rgb(77, 0, 128);
   font-size: 19px;
@@ -98,30 +110,6 @@ table {
 }
 @media only screen and (max-width: 1024px) {
   #header #a .links:hover {
-    font-size: 15px;
-  }
-}
-#header #a #active {
-  text-decoration: none;
-  color: white;
-  font-family: "DejaVu Sans Bold Oblique", sans-serif;
-  font-size: 16px;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-}
-@media only screen and (max-width: 1024px) {
-  #header #a #active {
-    font-size: 12px;
-  }
-}
-#header #a #active:hover {
-  color: rgb(77, 0, 128);
-  font-size: 19px;
-  transition-duration: 500ms;
-  transition-timing-function: linear;
-}
-@media only screen and (max-width: 1024px) {
-  #header #a #active:hover {
     font-size: 15px;
   }
 }
@@ -147,7 +135,7 @@ table {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  height: 42vh;
+  overflow-x: hidden;
 }
 #services #inception {
   display: flex;
@@ -359,6 +347,7 @@ table {
   width: 100%;
   justify-content: space-around;
   height: 42vh;
+  overflow-x: hidden;
 }
 #service #interstellar {
   display: flex;

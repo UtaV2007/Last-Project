@@ -55,7 +55,7 @@ body {
 body #header {
   display: flex;
   justify-content: space-around;
-  height: 16vh;
+  height: 128px;
   width: 100%;
   align-items: center;
   background-color: black;
@@ -73,6 +73,7 @@ body #header nav {
 }
 body #header .img {
   width: 12vw;
+  height: 128px;
   max-width: 175px;
   min-width: 140px;
 }

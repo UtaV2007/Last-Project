@@ -3,7 +3,7 @@
 #header {
     display: flex;
     justify-content: space-around;
-    height: 16vh;
+    height: 128px;
     width: 100%;
     align-items: center;
     background-color: black;
@@ -14,7 +14,7 @@
 
     nav {
         display: none;
-
+      width: 100%;
         @media only screen and (max-width: 800px) {
             display: flex;
         }
@@ -24,6 +24,7 @@
         width: 12vw;
         max-width: 175px;
         min-width: 140px;
+        height: 128px;
       }
   
     #a {  
@@ -40,6 +41,9 @@
       transition-timing-function: linear;
       @media only screen and (max-width: 1024px) {
         font-size: 12px;
+      }
+      @media only screen and (max-width: 800px) {
+        display: none;
       }
       }
   
@@ -113,6 +117,7 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
+    overflow-x: hidden;
     #theboys {
         display: flex;
         height: 40vh;
@@ -346,6 +351,7 @@
         display: flex;
         width: 100%;
         justify-content: space-around;
+        overflow-x: hidden;
         #thebeast {
             display: flex;
             height: 40vh;
@@ -591,7 +597,7 @@
             padding: 4vw;          
             border-top: 2px solid white;
             border-bottom: 2px solid white;
-  
+            overflow-x: hidden;
   
             #aboutusbutton {
               display: -webkit-box;
