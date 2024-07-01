@@ -95,6 +95,11 @@ body #header #a .links {
     font-size: 12px;
   }
 }
+@media only screen and (max-width: 800px) {
+  body #header #a .links {
+    display: none;
+  }
+}
 body #header #a .links:hover {
   color: rgb(77, 0, 128);
   font-size: 19px;
